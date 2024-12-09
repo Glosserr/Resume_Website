@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
     background-color: #f4f4f4;
 }
 
 /* Navigation Styles */
 header {
-    background-color: #1b3c6c;
-    color: white;
+    background-color: #093824;
+    color: black;
     padding: 1rem;
 }
 
@@ -47,7 +47,7 @@ nav a:hover, nav a.active {
 .profile-container {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #D9D9D9;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     padding: 2rem;
@@ -66,40 +66,32 @@ nav a:hover, nav a.active {
     margin-bottom: 1rem;
 }
 
+/* Social Icons Styles */
 .social-links {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 1rem;
 }
 
 .social-link {
     display: inline-block;
     color: #1b3c6c;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
 }
 
-.social-link svg {
+.social-link img {
     width: 24px;
     height: 24px;
-    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-link:hover svg {
-    color: #4db6ac;
-    transform: scale(1.2);
+.social-link:hover img {
+    fill: #4db6ac;
 }
-
-.social-link:active svg {
-    transform: scale(0.9);
-}
-
-#linkedin:hover svg { color: #0077B5; }
-#github:hover svg { color: #333; }
-#devpost:hover svg { color: #003366; }
 
 .about-container {
-    background-color: white;
+    background-color: #D9D9D9;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     padding: 2rem;
@@ -116,8 +108,8 @@ nav a:hover, nav a.active {
 
 /* Footer Styles */
 footer {
-    background-color: #1b3c6c;
-    color: white;
+    background-color: #093824;
+    color: black;
     text-align: center;
     padding: 1rem;
 }
