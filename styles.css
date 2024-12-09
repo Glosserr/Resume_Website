@@ -235,6 +235,42 @@ a
 
 
 /* Footer Styles */
+@media (min-width: 768px) {
+    .site-name {
+        width: auto;
+        text-align: left;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    .profile-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-image-container {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .about-image-container img {
+        max-width: 40%;
+        margin-bottom: 0;
+    }
+
+    .about-image-text {
+        width: 60%;
+    }
+
+    .right-image {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Footer Styles */
 footer {
     background-color: #093824;
     color: white;
@@ -242,15 +278,7 @@ footer {
     padding: 1rem;
 }
 
-/* Responsive adjustments for new containers */
-@media (max-width: 768px) {
-    .resume-layout {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .resume-commentary {
-        width: 100%;
-        margin: 1rem 0;
-    }
+footer a {
+    color: #4db6ac;
+    text-decoration: none;
 }
