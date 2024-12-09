@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Richard Glosser III - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,64 +11,49 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resume.html">Resume/CV</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <main class="home-page">
+        <div class="profile-container">
             <div class="profile-image">
-                <!-- Replace with your actual image -->
-                <img src="/api/placeholder/300/300" alt="Your Profile Picture">
+                <img src="richard-glosser.jpg" alt="Richard Glosser">
             </div>
-            <div class="intro">
-                <h1>Your Name</h1>
-                <h2>Your Professional Title</h2>
-                <p>
-                    A brief introduction about yourself. Highlight your key skills, 
-                    professional interests, and what makes you unique in your field.
-                </p>
+            <div class="profile-info">
+                <h1>Richard Glosser III</h1>
+                <p>Ambitious Computer Science Student @ MSU. I make Apps, Websites, and sometimes Games! Pursuing any opportunity to hack.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" id="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" id="github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7-.36.31-.68.86-.94 1.61-.73.35-2.61.91-3.61-1 0 0-.82-1.5-2.38-1.61 0 0-1.61 0-.11 1 0 0 1.08.54 1.84 2.57 0 0 .97 3.14 5.56 2.21v3.08"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" id="devpost">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 12h12v-2H6v2zm6-10L0 6h4v12h16V6h4L12 2z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </section>
-
-        <section class="about">
-            <h3>About Me</h3>
-            <p>
-                Expand on your professional journey, key achievements, 
-                and what drives you professionally. This is a great place 
-                to give more depth to your professional persona.
-            </p>
-            <div class="social-icons">
-                <a href="#" class="social-icon" id="github">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7-.36.31-.68.86-.94 1.61-.73.35-2.61.91-3.61-1 0 0-.82-1.5-2.38-1.61 0 0-1.61 0-.11 1 0 0 1.08.54 1.84 2.57 0 0 .97 3.14 5.56 2.21v3.08"/>
-                    </svg>
-                </a>
-                <a href="#" class="social-icon" id="devpost">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M6 12h12v-2H6v2zm6-10L0 6h4v12h16V6h4L12 2z"/>
-                    </svg>
-                </a>
-                <a href="#" class="social-icon" id="linkedin">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                        <rect x="2" y="9" width="4" height="12"/>
-                        <circle cx="4" cy="4" r="2"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
+        </div>
+        <div class="about-container">
+            <h2>An Avid Web and App Developer</h2>
+            <p>I do what I do because I enjoy creating quality of life experiences and tools for people to use daily.</p>
+        </div>
     </main>
 
     <footer>
-        <div class="contact">
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: Your LinkedIn Profile</p>
-            <p>GitHub: Your GitHub Profile</p>
-        </div>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Richard Glosser III. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
