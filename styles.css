@@ -125,6 +125,40 @@ footer {
     padding: 1rem;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover svg {
+    color: #3498db;
+    transform: scale(1.2);
+}
+
+.social-icon:active svg {
+    transform: scale(0.9);
+}
+
+/* Additional hover and active states for each platform */
+#github:hover svg { color: #333; }
+#devpost:hover svg { color: #003366; }
+#linkedin:hover svg { color: #0077B5; }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero, .resume-page, .project-grid {
