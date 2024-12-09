@@ -10,3 +10,7 @@ Focused on a resume page and radiated outward on what highlighted my experience 
 ## Projects
 Dedicated a page to the projects I have contributed to or created, with the potential to expand on it in the future. Heavy importance on linking to the actual project websites.
 
+
+
+## Credits:
+All images on this website are original or sourced from cleanpng.com (royalty free images website).
