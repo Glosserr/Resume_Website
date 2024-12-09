@@ -14,15 +14,29 @@ body {
 
 /* Navigation Styles */
 header {
-    background-color: #093824;
     color: black;
+    background-color: #093824;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 2rem;
+}
+
+nav {
+    margin-right: 2rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -30,6 +44,7 @@ nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 500;
 }
 
 nav a:hover, nav a.active {
