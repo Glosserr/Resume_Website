@@ -5,41 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .project-card {
+            flex: 0 1 calc(33.333% - 2rem);
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resume.html">Resume/CV</a></li>
                 <li><a href="portfolio.html" class="active">Portfolio</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="portfolio-page">
+    <main class="home-page">
         <h1>My Projects</h1>
         
         <div class="project-grid">
-            <div class="project-card">
-                <img src="/api/placeholder/300/200" alt="Project 1">
-                <h3>Project 1 Name</h3>
+            <div class="project-card about-container">
+                <img src="Imgs/VelocIT.png" alt="Project 1">
+                <h3>VelocIT</h3>
                 <p>A brief description of the project, its technologies, and its significance.</p>
-                <a href="#">View Project</a>
+                <a href="https://devpost.com/software/velocit" class="social-link">View Project</a>
             </div>
 
-            <div class="project-card">
-                <img src="/api/placeholder/300/200" alt="Project 2">
-                <h3>Project 2 Name</h3>
+            <div class="project-card about-container">
+                <img src="Imgs/Carboncount.png" alt="Project 2">
+                <h3>CarbonCount</h3>
                 <p>A brief description of the project, its technologies, and its significance.</p>
-                <a href="#">View Project</a>
+                <a href="https://devpost.com/software/carboncounter" class="social-link">View Project</a>
             </div>
 
-            <div class="project-card">
-                <img src="/api/placeholder/300/200" alt="Project 3">
-                <h3>Project 3 Name</h3>
-                <p>A brief description of the project, its technologies, and its significance.</p>
-                <a href="#">View Project</a>
+            <div class="project-card about-container">
+                <img src="Imgs/system82.png" alt="Project 3">
+                <h3>System82</h3>
+                <p>The website not only entertains users with its interactive elements but also encourages them to piece together the puzzle and uncover the truth behind the mysterious entity, turning the exploration into an educational and entertaining adventure on ethics in computer science.</p>
+                <a href="https://devpost.com/software/system82" class="social-link">View Project</a>
+            </div>
+
+            <div class="project-card about-container">
+                <img src="Imgs/thai_pitch.jpg" alt="Project 4">
+                <h3>Planties</h3>
+                <p>A Plant identifier app, for the use of hobbyist gardeners to track plant's specific care, or discover new plants</p>
+                <a href="https://github.com/Glosserr/Planties" class="social-link">View Project</a>
+            </div>
+
+            <div class="project-card about-container">
+                <img src="Imgs/a6kbkbayc.png" alt="Project 5">
+                <h3>Fluid Combat</h3>
+                <p>A video game project to familiarize myself with C# game coding and player v.s. AI controlers.</p>
+                <a href="#" class="social-link">View Project</a>
+            </div>
+
+            <div class="project-card about-container">
+                <img src="Imgs/kisspng-social-media-computer-icons-symbol-share-icon-png-share-button-5b3c71f7765252.0906995415306879914847.png" alt="Project 6">
+                <h3>ShareF</h3>
+                <p>An expereimental project that I will do in order to familiarize myself with Microsoft Azure. Using it I will create a small file sharing service</p>
+                <a href="#" class="social-link">View Project</a>
             </div>
         </div>
     </main>

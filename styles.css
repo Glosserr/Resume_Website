@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@ body {
     color: #000000;
     background-color: #f4f4f4;
 }
+
 
 /* Navigation Styles */
 header {
@@ -47,18 +47,22 @@ nav a:hover, nav a.active {
 .profile-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start; 
     background-color: #D9D9D9;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     max-width: 800px;
     width: 100%;
+    gap: 2rem; 
 }
 
 .profile-image img {
     border-radius: 50%;
     max-width: 150px;
+    height: auto; 
     margin-right: 2rem;
+    object-fit: cover;
 }
 
 .profile-info h1 {
@@ -106,6 +110,68 @@ nav a:hover, nav a.active {
     margin-bottom: 1rem;
 }
 
+.about-image-container {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.about-image-container img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-image-text {
+    flex-grow: 1;
+}
+
+.right-image {
+    flex-direction: row;
+}
+
+.right-image img {
+    order: -1; 
+}
+
+.resume-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.resume-commentary {
+    flex: 0 0 20%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume-image {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-image img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #093824;
@@ -114,14 +180,16 @@ footer {
     padding: 1rem;
 }
 
-/* Responsive Design */
+/* Responsive adjustments for new containers */
 @media (max-width: 768px) {
-    .profile-container {
+    .about-image-container {
         flex-direction: column;
         text-align: center;
     }
-
-    .profile-image {
+    .about-image-container img {
         margin-bottom: 1rem;
+    }
+    .right-image .about-image-container {
+        flex-direction: column;
     }
 }
